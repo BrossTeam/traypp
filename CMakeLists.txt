@@ -8,7 +8,7 @@ file(GLOB src
     "tray/src/*/*/*.cpp"
 )
 
-add_library(tray STATIC ${src})
+add_library(tray SHARED ${src})
 
 if (UNIX)
     find_package(PkgConfig REQUIRED)
